@@ -1,0 +1,7 @@
+/.vs/
+/x64/
+*.sln
+DataStruct/x64
+DataStruct.vcxproj
+*.filters
+*.user
