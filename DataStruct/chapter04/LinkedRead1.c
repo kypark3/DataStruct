@@ -65,6 +65,7 @@ int main( ) {
 	}
 
 	ShowNodeInfo(head, tail);
+
 	freeNode(head, tail);
 	return 0;
 }
