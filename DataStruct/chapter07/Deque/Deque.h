@@ -28,4 +28,6 @@ void DQAddLast(Deque *dq, Data data);
 Data DQRemoveFisrt(Deque *dq);
 Data DQRemoveLast(Deque *dq);
 
+Data DQGetFirst(Deque *dq);
+Data DQGetLst(Deque *dq);
 #endif // !__DEQUE_H__
