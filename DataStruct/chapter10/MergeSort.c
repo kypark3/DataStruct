@@ -58,7 +58,7 @@ void MergeSort(int ar[], int left, int right) {
 
 
 int main( ) {
-	int ar[] = { 2,5,4,9,1,3,6 };
+	int ar[] = { 2,1,3,9,1,3,6 };
 	MergeSort(ar, 0, sizeof(ar) / sizeof(int) - 1);
 	
 	for (int i = 0; i < sizeof(ar) / sizeof(int); i++) {
