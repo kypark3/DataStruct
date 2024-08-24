@@ -17,7 +17,7 @@ void Enqueue(Queue *q, Data data) {
 	if (newNode != NULL) {
 		newNode->data = data;
 		newNode->next = NULL;
-		if (q->front == NULL && q->rear == NULL) {
+		if (QIsEmpty(q) {
 			q->front = newNode;
 			q->rear = newNode;
 		}
