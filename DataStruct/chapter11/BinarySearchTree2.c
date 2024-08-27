@@ -131,8 +131,8 @@ BTreeNode* BSTRemove(BTreeNode **root, BSTData target) {
 		BTData delData;
 
 		while (GetLeftSubTree(mNode) != NULL) { // 왼쪽 끝까지 가서 최소값을 찾음.
-			mNode = mpNode;
-			mpNode = GetLeftSubTree(mNode);
+			mpNode = mNode;
+			mNode = GetLeftSubTree(mNode);
 		}
 
 		delData = GetData(dNode); // 대체전 데이터 백업
