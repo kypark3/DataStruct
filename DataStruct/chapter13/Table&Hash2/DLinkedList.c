@@ -9,7 +9,7 @@ void ListInit(List *plist) {
 	plist->numOfData = 0;
 }
 
-void LInsert(List *plist, LData data) {
+void FInsert(List *plist, LData data) {
 	Node *newNode = (Node*)malloc(sizeof(Node));
 	newNode->data = data;
 
@@ -18,6 +18,19 @@ void LInsert(List *plist, LData data) {
 	(plist->numOfData)++;
 }
 
+void SInsert(List *plist, LData data) {
+	printf("정렬 삽입 미구현\n");
+}
+
+
+void LInsert(List *plist, LData data) {
+	if (plist->comp == NULL) {
+		FInsert(plist, data);
+	}
+	else {
+		SInsert(plist, data);
+	}
+}
 
 
 int LFisrt(List *plist, LData *pdata) {
@@ -67,6 +80,3 @@ void SetSortRule(List *plist, int (*comp)(LData d1, LData d2)) {
 	}
 }
 
-void SInsert(List *plist, LData data) {
-	printf("정렬 삽입 미구현\n");
-}

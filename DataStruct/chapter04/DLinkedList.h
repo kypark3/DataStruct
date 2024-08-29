@@ -26,7 +26,7 @@ typedef LinkedList List;
 
 void ListInit(List *plist);
 void LInsert(List *plist ,LData data);
-void SInsert(List *plist, LData data);
+
 int LFirst(List *plist, LData *pdata);
 int LNext(List *plist, LData *pdata);
 
